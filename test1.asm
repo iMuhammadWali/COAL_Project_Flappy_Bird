@@ -67,9 +67,9 @@ call drawRect
 
 ; This has yet to be converted into a subroutine
 mov si, barrier
-mov di, 24140 - 2*320             ; Calculate this with the x and y coordinates
-mov bx, 30             ; width of the image 
-mov dx, 100             ; height of the image
+mov di, 24140 - 2*320       ; Calculate this with the x and y coordinates
+mov bx, 30                  ; width of the image 
+mov dx, 100                 ; height of the image
 
 ; This is basically a nested loop
 printBackground1:
