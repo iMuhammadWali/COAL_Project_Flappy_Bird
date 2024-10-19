@@ -1,9 +1,9 @@
 from PIL import Image, ImageEnhance
 
 # Load the image
-image = Image.open(r'transkiki.png')
+image = Image.open(r'barrier_up.png')
 
-image = image.resize((50,50))
+image = image.resize((26,148))
 
 # Ensure the image is in the correct mode (8-bit pixels, 256 colors)
 image = image.convert('P')
@@ -26,7 +26,7 @@ for y in range(height):
 
 # Write the pixel data and palette to a file
 with open('kiki.asm', 'w') as file:
-    file.write('kiki: db ')
+    file.write('barrier: db ')
     for i in range(len(pixel_data)):
         file.write(f'0x{pixel_data[i]:02X}')
         if i != len(pixel_data) - 1:
