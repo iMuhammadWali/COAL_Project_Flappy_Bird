@@ -65,6 +65,7 @@ call drawRect
 push 159
 call drawRect
 
+; This has yet to be converted into a subroutine
 mov si, barrier
 mov di, 24140 - 2*320             ; Calculate this with the x and y coordinates
 mov bx, 30             ; width of the image 
